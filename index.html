@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <!-- Font Awesome Solid + Brands -->
+  <!-- from https://fontawesome.com/v6/docs/web/setup/host-yourself/webfonts -->
+  <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
+  <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
+</head>
+<body class= "bg-aqua-600">
+    <!-- NavBar -->
+    <nav id="navbar" > 
+      <!-- <div id="menuToggle" class="lg:hidden">
+        <span class="relative flex z-30 w-8 h-2 mb-1 bg-white rounded-sm"></span>
+        <i class="text-white hover:text-aqua-200 text-3xl md:text-4xl fa-solid fa-bars"></i>
+      </div> -->
+      <ul id="navbar-option-container">
+        <button id="home-option" class="navbar-option">Home</button>
+        <button class="navbar-option">Catering</button>
+        <button class="navbar-option">Menus</button>
+        <button class="navbar-option">Merch</button>
+        <button class="navbar-option">About Us</button>
+      </ul>
+      <button id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="navbar-info-container">
+        <button class="navbar-info-button" id="hours-info-button">
+          Hours & Info
+        </button>
+        <button class="navbar-info-button" id="phone-info-button">
+          <i class="fa-solid fa-phone"> </i> 
+          <span>401-473-2900</span>
+        </button>
+        <button class="navbar-info-button" id="location-info-button">
+          <i class="fa-solid fa-location-dot"> </i> 
+          <span>60 Valley St, Providence</span>
+        </button>
+      </ul>
+    </nav>
+    <!--Main Page-->
+    <div class="page-content">
+      <!-- Title Card-->
+      <div class="splash-page">
+        <div class="splash-card">
+          <div class="header">
+            <h1 id="title">TROOP</h1>
+            <!-- Buttons-->
+            <div id="header-button-container">
+              <button class="header-button solid-button">Book a Table</button>
+              <button class="header-button solid-button">Order Now</button>
+            </div>
+            <div id="hours-container">
+              <div id="hours-label-flex-box">
+                <div id="hours-label-container">
+                    <div id="hours-label">HOURS</div>
+                </div>
+                <div id="hours-label-border"></div>
+              </div>
+                    <div class="hours-text-container">
+                      <p>Mon & Tues</p>
+                      <p>Wed & Thurs</p>
+                      <p>Fri & Sat</p>
+                      <p>Sun</p>
+                    </div>
+                    <div id="hours-text-container-right" class="hours-text-container">
+                      <p>Closed</p>
+                      <p>5 pm - 1 am</p>
+                      <p>10 am - 2 am</p>
+                      <p>10 am - 4 pm</p>
+                    </div>
+              </div>
+            </div>
+          <!-- Main Image-->
+          <!-- from http://bostonvoyager.com/interview/check-troop-pvds-artwork/ -->
+          <div id="splash-image-container">
+            <img id="splash-image" src="./assets/images/title_image.png">
+          </div>
+        </div>
+      </div>
+          <div id="events-section">
+             <!-- image from http://bostonvoyager.com/interview/check-troop-pvds-artwork/ -->
+            <div id="events-image-container">
+              <img id="events-image" src="./assets/images/interior_image.png"/>
+            </div>
+            <div id="events-text-container">
+                <h2>Upcoming Events</h2>
+                <!-- inspired by Google's concert events UI: https://www.google.com/search?q=concert+events -->
+                <ul id="calendar-event-list">
+                  <li class="event-item">
+                    <div class="event-date-container">
+                      <p class="event-date-day">1</p>
+                      <p class="event-date-month">NOV</p>
+                    </div>
+                    <div class="event-info-container">
+                      <h3 class="font-bold">Tell Your Truth [Open Mic Poetry]</h3>
+                      <p class="text-sm font-light">with Mr. Orange Live ft. Rudy Ru</p>
+                  </li>
+                  <li class="event-item">
+                    <div class="event-date-container">
+                      <p class="event-date-day">8</p>
+                      <p class="event-date-month">NOV</p>
+                    </div>
+                    <div class="event-info-container">
+                      <h3>Who Got the Juice? Dancehall vs. Reggaeton</h3>
+                      <p>with DJ Matik vs DJ Mambo (pt. 2)</p>
+                    </div>
+                  </li>
+                  <li class="event-item">
+                    <div class="event-date-container">
+                      <p class="event-date-day">12</p>
+                      <p class="event-date-month">NOV</p>
+                    </div>
+                    <div class="event-info-container">
+                      <h3>Culture Trivia</h3>
+                      <p>with DJ Incredible</p>
+                    </div>
+                  </li>
+                  <li class="event-item">
+                    <div class="event-date-container">
+                      <p class="event-date-day">23</p>
+                      <p class="event-date-month">NOV</p>
+                    </div>
+                    <div class="event-info-container">
+                      <h3>Me and All My Friend’s</h3>
+                      <p>with Da Huey x Seraph </p>
+                    </div>
+                  </li>
+                </ul>
+                <button id="see-all-button" class="solid-button">See all</button>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div>
+            <h3>Location</h3>
+            <p>60 Valley St</p>
+            <p>Providence, RI 02902</p>
+          </div>
+          <div>
+            <h3>Hours</h3>
+            <div id="footer-hours-container">
+              <div>
+                <p>Mon & Tues</p>
+                <p>Wed & Thurs</p>
+                <p>Fri & Sat</p>
+                <p>Sun</p>
+              </div>
+              <div>
+                <p>Closed</p>
+                <p>5 pm - 1 am</p>
+                <p>10 am - 2 am</p>
+                <p>10 am - 4 pm</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Contact us</h3>
+            <p>401-473-2900</p>
+            <p>info@trooppvd.com</p>
+            <div id="social-media-icon-container">
+              <button><i class="fa-brands fa-instagram"></i></button>
+              <button><i class="fa-brands fa-twitter"></i></button>
+              <button><i class="fa-brands fa-facebook"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div id="bottom-footer">
+          <i class="fa-solid fa-copyright"></i> <span>2020 BY SIM SIMA</span>
+        </div>
+      </div>
+    </div>  
+</body>
+</html>
